@@ -1,0 +1,32 @@
+Column_Name,Data_Type,Non_Null_Count,Null_Count,Unique_Values,Min_Value,Max_Value,Description
+Date,str,40830,0,4083,N/A,N/A,Calendar date in YYYY-MM-DD format
+Day_of_Week,str,40830,0,7,N/A,N/A,Day of the week (Monday through Sunday)
+Month,str,40830,0,12,N/A,N/A,Full month name (January through December)
+Month_Number,int64,40830,0,12,1.0,12.0,Month number (1-12)
+Year,int64,40830,0,12,2015.0,2026.0,Calendar year (2015-2026)
+Day_of_Month,int64,40830,0,31,1.0,31.0,Day of the month (1-31)
+Monitoring_Station,str,40830,0,10,N/A,N/A,Name of the air quality monitoring station (10 stations)
+City,str,40830,0,1,N/A,N/A,City name (Delhi for all records)
+AQI_Value,float64,40830,0,3237,0.0,446.4,Air Quality Index value ranging from 0 to 500+
+AQI_Category,str,40830,0,6,N/A,N/A,AQI category classification (Good/Satisfactory/Moderate/Poor/Very Poor/Severe)
+Primary_Pollutant,str,40830,0,6,N/A,N/A,"Most dominant pollutant on that day (PM2.5, PM10, NO2, SO2, CO, O3, NH3)"
+PM2.5_µgm³,float64,40830,0,1300,0.0,159.9,Fine particulate matter concentration in µg/m³
+PM10_µgm³,float64,40830,0,4777,0.0,680.4,Coarse particulate matter concentration in µg/m³
+NO₂_µgm³,float64,40830,0,1449,0.0,177.8,Nitrogen dioxide concentration in µg/m³
+SO₂_µgm³,float64,40830,0,770,0.0,87.0,Sulfur dioxide concentration in µg/m³
+CO_mgm³,float64,40830,0,399,0.0,4.5,Carbon monoxide concentration in mg/m³
+O₃_µgm³,float64,40830,0,1777,0.0,226.0,Ozone concentration in µg/m³
+NH₃_µgm³,float64,40830,0,6030,0.0,896.1,Ammonia concentration in µg/m³
+Temperature_C,float64,40830,0,482,1.7,57.4,Air temperature in degrees Celsius
+Humidity_%,float64,40830,0,601,30.0,90.0,Relative humidity as percentage (0-100)
+Wind_Speed_ms,float64,40830,0,148,0.0,15.0,Wind speed in meters per second
+Wind_Direction_deg,float64,40830,0,361,0.0,360.0,Wind direction in degrees (0-360)
+Rainfall_mm,float64,40830,0,309,0.0,46.1,Daily rainfall or precipitation in millimeters
+Atmospheric_Pressure_hPa,float64,40830,0,218,1000.2,1025.6,Atmospheric pressure in hectopascals (hPa)
+Visibility_km,float64,40830,0,96,0.5,10.0,Horizontal visibility in kilometers
+Season,str,40830,0,4,N/A,N/A,Season of the year (Winter/Summer/Monsoon/Post-Monsoon)
+Is_Festival,int64,40830,0,2,0.0,1.0,"Binary indicator (1 if major Indian festival, 0 otherwise)"
+Festival_Name,str,790,40040,7,N/A,N/A,"Name of the festival if applicable, None otherwise"
+AQI_Influencing_Event,str,40830,0,13,N/A,N/A,Description of environmental event affecting AQI on that day
+Week_Number,int64,40830,0,53,1.0,53.0,ISO week number (1-53)
+Quarter,int64,40830,0,4,1.0,4.0,Quarter of the year (1-4)
