@@ -1,73 +1,127 @@
-# Welcome to your Lovable project
+🌫️ Safe Delhi AQI
 
-## Project info
+A Real-Time Air Quality Monitoring Web Application that visualizes pollution levels across Delhi using an interactive map and live AQI data.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This project helps users understand the air quality situation in Delhi by displaying monitoring stations, pollution intensity, and detailed air metrics.
 
-## How can I edit this code?
+🚀 Live Demo
 
-There are several ways of editing your application.
+(After deployment you can add the link)
 
-**Use Lovable**
+https://safedelhiaqi.vercel.app
+📸 Project Preview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Add screenshots here later:
 
-Changes made via Lovable will be committed automatically to this repo.
+/screenshots/map-view.png
+/screenshots/heatmap-view.png
 
-**Use your preferred IDE**
+Example:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Map View	Heatmap View
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+	
+✨ Features
 
-Follow these steps:
+✅ Real-time AQI monitoring
+✅ Interactive pollution map
+✅ Heatmap visualization of pollution intensity
+✅ Search for AQI monitoring stations
+✅ Station-level pollution details
+✅ Weather and pollutant metrics
+✅ Fast API using edge functions
+✅ Clean and responsive UI
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🧰 Tech Stack
+Frontend
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+React
 
-# Step 3: Install the necessary dependencies.
-npm i
+TypeScript
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Vite
+
+Leaflet Maps
+
+Backend
+
+Edge functions from Supabase
+
+Data Source
+
+Air quality data from World Air Quality Index Project
+
+Deployment
+
+GitHub
+
+Vercel
+
+📂 Project Structure
+safedelhiaqi_project
+│
+├── src
+│   ├── components
+│   ├── hooks
+│   ├── pages
+│   ├── integrations
+│   │   └── supabase
+│   └── utils
+│
+├── supabase
+│   └── functions
+│       └── fetch-aqi
+│
+├── public
+├── package.json
+├── vite.config.ts
+└── README.md
+⚙️ Installation
+1 Clone the repository
+git clone https://github.com/lokesh2605/safedelhiaqi_project.git
+2 Go to project folder
+cd safedelhiaqi_project
+3 Install dependencies
+npm install
+4 Start development server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+App will run at:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+http://localhost:5173
+🔑 Environment Variables
 
-**Use GitHub Codespaces**
+Create .env file:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_key
 
-## What technologies are used for this project?
+Supabase secret:
 
-This project is built with:
+WAQI_API_TOKEN=your_waqi_api_token
+📊 AQI Scale
+AQI	Category	Health Impact
+0-50	Good	Air quality is satisfactory
+51-100	Moderate	Acceptable
+101-150	Unhealthy for Sensitive Groups	Possible health risk
+151-200	Unhealthy	Everyone may feel effects
+201-300	Very Unhealthy	Health alert
+301+	Hazardous	Emergency conditions
+🔮 Future Improvements
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+🚀 Historical AQI analytics
+🚀 Pollution prediction models
+🚀 Mobile app version
+🚀 User alerts for high AQI
+🚀 Multi-city comparison
 
-## How can I deploy this project?
+👨‍💻 Author
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Lokesh Gadda
 
-## Can I connect a custom domain to my Lovable project?
+GitHub
+https://github.com/lokesh2605
 
-Yes, you can!
+📜 License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+MIT License
